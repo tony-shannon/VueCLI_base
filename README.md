@@ -66,3 +66,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Got this far with running it
+see screenshots in /images folder
+
