@@ -4,7 +4,9 @@ USER gitpod
 
 # RUN npm i -g vue-cli
 RUN npm install -g @vue/cli && \
-    npm install json-server -g
+    npm install json-server -g && \
+    cd hello-axios && npm install
+    
     
 
 # Install custom tools, runtime, etc. using apt-get
