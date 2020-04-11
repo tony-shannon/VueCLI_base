@@ -2,7 +2,8 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN npm i -g vue-cli
+# RUN npm i -g vue-cli
+RUN npm install -g @vue/cli
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
