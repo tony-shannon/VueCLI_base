@@ -3,8 +3,8 @@ FROM gitpod/workspace-full
 USER gitpod
 
 # RUN npm i -g vue-cli
-RUN npm install -g @vue/cli && \
-    sudo npm install json-server -g
+RUN npm install -g @vue/cli \
+    && npm install -g json-server 
 # RUN cd hello-axios && npm install
     
     
