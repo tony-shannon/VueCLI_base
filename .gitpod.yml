@@ -11,7 +11,8 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   #- init: echo 'init script' # runs during prebuild
-  - init: cd hello-axios && npm install
+
+  - init: npm install -g json-server && cd hello-axios && npm install 
     command:  json-server db.json
     command:  cd hello-axios && npm run serve
   #  command: echo 'start script'
