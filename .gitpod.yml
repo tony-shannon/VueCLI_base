@@ -5,14 +5,15 @@ image:
 ports:
   - port: 3000
     onOpen: open-preview
-  - port: 8081
+  - port: 8080
     onOpen: open-preview  
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   #- init: echo 'init script' # runs during prebuild
-  - init: cd hello-axios && npm run serve 8081
-    command:  json-server db.json
+  #- init: cd hello-axios && npm run serve
+   - command:  json-server db.json &&
+               cd hello-axios && npm run serve
   #  command: echo 'start script'
 
 vscode:
