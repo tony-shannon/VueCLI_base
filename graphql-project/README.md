@@ -30,6 +30,38 @@ mutation{
    Name}
 }
 
+mutation{
+  updateProblem(
+    data: {
+    idN: 3
+    CodeD: "GQ_11D10",
+    Description: "Cardiac Congestion",
+    Name: "CCF",
+    Days: "7"
+  }
+  where:
+  {
+     id: "ck9cyoxq0q4k70933t5ckcwsk"    
+  }
+  )
+  {id
+   idN
+   Name}
+}
+
+mutation{
+  deleteProblem(
+    where: {
+        id: "ck9cz4gifq8st09333i6mjvbv"
+  
+    }
+  )
+  {
+     id
+  idN
+   }
+}
+
 query    {
   medications {
     id
