@@ -117,7 +117,13 @@ mutation{
 }
 
 
+## Issues to consider
 
+id  from GraphQL is unique text string and mandatory - needed for updates and deletes
+idN is integer Integer I set up beside it, could be mapped to other id in Vue if needs be
+
+Dose-Mg type wasnt allowed by GraphQL backend - so using DoseMg
+other data types should be identical
 
 ## Project setup
 ```
