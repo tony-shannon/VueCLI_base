@@ -1,0 +1,34 @@
+mutation{
+  createUser(
+    data: {
+      id: "wioxoi34WwerffEE"
+      name: "Jack"
+      }
+  )
+  {id
+   name}
+}
+
+                     
+                     
+query: `
+                            {
+                                users {
+                                    id
+                                    name
+                                }
+                            }
+                        `                        
+
+mutation: `
+{
+  createUser(
+    data: {
+      id: "wioxoi34WwerffEEKL"
+      name: "Jill"
+      }
+  )
+  {id
+   name}
+}                        
+`

@@ -1,4 +1,7 @@
 # graphql-project
+Start up based on this tutorial
+https://www.thepolyglotdeveloper.com/2019/01/query-graphql-api-vuejs-axios/
+
 
 ## Project setup
 ```
